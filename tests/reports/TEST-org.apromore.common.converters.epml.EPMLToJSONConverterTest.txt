@@ -1,0 +1,12 @@
+Testsuite: org.apromore.common.converters.epml.EPMLToJSONConverterTest
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.028 sec
+
+Testcase: testConvert took 0.011 sec
+	Caused an ERROR
+tests\data\object.epml (The system cannot find the path specified)
+java.io.FileNotFoundException: tests\data\object.epml (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:97)
+	at org.apromore.common.converters.epml.EPMLToJSONConverterTest.testConvert(EPMLToJSONConverterTest.java:47)
+
