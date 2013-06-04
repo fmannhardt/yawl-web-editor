@@ -158,7 +158,10 @@ public class OryxDiagramHandler extends OryxHandlerImpl {
         metaData.setCoverage(diagramShape.getProperty("speccoverage"));
         metaData.setStatus(diagramShape.getProperty("specstatus"));
         if (diagramShape.hasProperty("specpersistent")) {
-            metaData.setPersistent(diagramShape.getPropertyBoolean("specpersistent"));
+            Boolean propertyBoolean = diagramShape.getPropertyBoolean("specpersistent");
+            if (propertyBoolean != null) {
+            	metaData.setPersistent(propertyBoolean);	
+            }			
         }
 
         spec.setMetaData(metaData);

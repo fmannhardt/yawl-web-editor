@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Core Diagram API"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Signavio Core Components - Platform"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/saxon9-dom.jar"/>
+	<classpathentry kind="lib" path="lib/saxon9-jdom.jar"/>
+	<classpathentry kind="lib" path="lib/saxon9-s9api.jar"/>
+	<classpathentry kind="lib" path="lib/saxon9.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/yawl-lib-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/yawleditor-layout.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
