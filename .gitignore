@@ -12,3 +12,4 @@
 /platform extensions/diagram core/target
 /platform extensions/bpmn20xmlbasic/build
 /platform extensions/bpmn20xmlbasic/target
+/platform extensions/diagram core/bin
