@@ -1,1 +1,14 @@
 /target/editor.war
+/editor/build
+/platform extensions/yawl/build
+/platform extensions/xpdl/build
+/platform extensions/syntaxchecker/build
+/platform extensions/jpdl/target
+/platform extensions/jpdl/build
+/platform extensions/syntaxchecker/target
+/platform extensions/xpdl/target
+/platform/target
+/platform extensions/diagram core/build
+/platform extensions/diagram core/target
+/platform extensions/bpmn20xmlbasic/build
+/platform extensions/bpmn20xmlbasic/target

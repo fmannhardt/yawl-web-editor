@@ -57,10 +57,10 @@ ORYX.Plugins.YAWLSupport = ORYX.Plugins.AbstractPlugin.extend({
         this.progressDialog = null;
 
         // Stub of YAWL Net in JSON
-        this._dummyRootnetData = '{"resourceId":"canvas","properties":{"yawlid":"","name":"","documentation":"","title":"","creators":"","subject":"","description":"","contributor":"","coverage":"","validfrom":"","validto":"","created":"","version":"","status":"","persistent":"","uri":"","datatypedefinitions":"","bgcolor":"#FFFFFF","isrootnet":true,"externaldatagateway":"","decompositionid":"","decompositionname":"","decompositionexternalinteraction":"","decompositioncodelet":"","decompositionvariables":"","decompositionlogpredicate":""},"stencil":{"id":"Diagram"},"childShapes":[{"resourceId":"sid-A72E7647-D0AA-41BE-86FB-CB771A630869","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"InputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":107,"y":213},"upperLeft":{"x":75,"y":181}},"dockers":[]},{"resourceId":"sid-0B3EA74F-3F63-45DC-8F15-DF8D8E6A3718","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"OutputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":797,"y":213},"upperLeft":{"x":765,"y":181}},"dockers":[]}],"bounds":{"lowerRight":{"x":1485,"y":1050},"upperLeft":{"x":0,"y":0}},"stencilset":{"url":"/Apromore-editor/editor/stencilsets//yawl/yawl.json","namespace":"http://b3mn.org/stencilset/yawl2.2#"},"ssextensions":[]}';
+        this._dummyRootnetData = '{"resourceId":"canvas","properties":{"yawlid":"","name":"","documentation":"","title":"","creators":"","subject":"","description":"","contributor":"","coverage":"","validfrom":"","validto":"","created":"","version":"","status":"","persistent":"","uri":"","datatypedefinitions":"","bgcolor":"#FFFFFF","isrootnet":true,"externaldatagateway":"","decompositionid":"","decompositionname":"","decompositionexternalinteraction":"","decompositioncodelet":"","decompositionvariables":"","decompositionlogpredicate":""},"stencil":{"id":"Diagram"},"childShapes":[{"resourceId":"sid-A72E7647-D0AA-41BE-86FB-CB771A630869","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"InputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":107,"y":213},"upperLeft":{"x":75,"y":181}},"dockers":[]},{"resourceId":"sid-0B3EA74F-3F63-45DC-8F15-DF8D8E6A3718","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"OutputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":797,"y":213},"upperLeft":{"x":765,"y":181}},"dockers":[]}],"bounds":{"lowerRight":{"x":1485,"y":1050},"upperLeft":{"x":0,"y":0}},"stencilset":{"url":"/editor/editor/stencilsets/yawl/yawl.json","namespace":"http://b3mn.org/stencilset/yawl2.2#"},"ssextensions":[]}';
 
         // Stub of YAWL Subnet in JSON
-        this._dummySubnetData = '{"resourceId":"canvas","properties":{"yawlid":"","name":"","documentation":"","title":"","creators":"","subject":"","description":"","contributor":"","coverage":"","validfrom":"","validto":"","created":"","version":"","status":"","persistent":"","uri":"","datatypedefinitions":"","bgcolor":"#FFFFFF","isrootnet":false,"externaldatagateway":"","decompositionid":"","decompositionname":"","decompositionexternalinteraction":"","decompositioncodelet":"","decompositionvariables":"","decompositionlogpredicate":""},"stencil":{"id":"Diagram"},"childShapes":[{"resourceId":"sid-A72E7647-D0AA-41BE-86FB-CB771A630869","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"InputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":107,"y":213},"upperLeft":{"x":75,"y":181}},"dockers":[]},{"resourceId":"sid-0B3EA74F-3F63-45DC-8F15-DF8D8E6A3718","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"OutputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":797,"y":213},"upperLeft":{"x":765,"y":181}},"dockers":[]}],"bounds":{"lowerRight":{"x":1485,"y":1050},"upperLeft":{"x":0,"y":0}},"stencilset":{"url":"/Apromore-editor/editor/stencilsets//yawl/yawl.json","namespace":"http://b3mn.org/stencilset/yawl2.2#"},"ssextensions":[]}';
+        this._dummySubnetData = '{"resourceId":"canvas","properties":{"yawlid":"","name":"","documentation":"","title":"","creators":"","subject":"","description":"","contributor":"","coverage":"","validfrom":"","validto":"","created":"","version":"","status":"","persistent":"","uri":"","datatypedefinitions":"","bgcolor":"#FFFFFF","isrootnet":false,"externaldatagateway":"","decompositionid":"","decompositionname":"","decompositionexternalinteraction":"","decompositioncodelet":"","decompositionvariables":"","decompositionlogpredicate":""},"stencil":{"id":"Diagram"},"childShapes":[{"resourceId":"sid-A72E7647-D0AA-41BE-86FB-CB771A630869","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"InputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":107,"y":213},"upperLeft":{"x":75,"y":181}},"dockers":[]},{"resourceId":"sid-0B3EA74F-3F63-45DC-8F15-DF8D8E6A3718","properties":{"yawlid":"","name":"","documentation":""},"stencil":{"id":"OutputCondition"},"childShapes":[],"outgoing":[],"bounds":{"lowerRight":{"x":797,"y":213},"upperLeft":{"x":765,"y":181}},"dockers":[]}],"bounds":{"lowerRight":{"x":1485,"y":1050},"upperLeft":{"x":0,"y":0}},"stencilset":{"url":"/editor/editor/stencilsets/yawl/yawl.json","namespace":"http://b3mn.org/stencilset/yawl2.2#"},"ssextensions":[]}';
 
         // Stub of YAWL Net SVG representation
         this._dummySVG = '<svg/>';
@@ -135,7 +135,7 @@ ORYX.Plugins.YAWLSupport = ORYX.Plugins.AbstractPlugin.extend({
     /**************** Utility functions for use in all parts *************/
 
     /**
-     * Return the YAWL ID of the Net
+     * Return the YAWL ID of the Net (if available)
      *
      * @private
      * @param diagram
@@ -146,11 +146,11 @@ ORYX.Plugins.YAWLSupport = ORYX.Plugins.AbstractPlugin.extend({
     },
 
     /**
-     * Return the YAWL ID of the Net
+     * Return the name of the net
      *
      * @private
      * @param diagram
-     * @return YAWL ID
+     * @return name of net
      */
     _extractNetName:function (diagram) {
         return this._extractNet(diagram).properties.name;
@@ -683,6 +683,11 @@ ORYX.Plugins.YAWLSupport = ORYX.Plugins.AbstractPlugin.extend({
 
                                 var subnetDiagram = Ext.decode(request.responseText);
                                 var subnetID = this._extractNetID(subnetDiagram);
+                                if (!subnetID) {
+                                	// Assign new randomly generated ID
+                                	subnetID = ORYX.Editor.provideId();
+                                	subnetDiagram.properties.yawlid = subnetID;
+                                }
                                 shape.properties.decompositionid = subnetID;
 
                                 // Let caller decide what to do with subnet
@@ -695,7 +700,6 @@ ORYX.Plugins.YAWLSupport = ORYX.Plugins.AbstractPlugin.extend({
                                     if (onCompleted && typeof(onCompleted) === "function") {
                                         onCompleted();
                                     }
-                                    ;
                                 }
 
                             }.bind(this),
